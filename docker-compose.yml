@@ -7,5 +7,5 @@ services:
     volumes:
       - ./logs:/app/logs
     environment:
-      - TELEGRAM_TOKEN: "6038351834:AAHrRDBUteglTmvBGPEQjN1mor8_8Bm1Blk"
-      - OPENAI_API_KEY: "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"
+      - TELEGRAM_TOKEN = "6038351834:AAHrRDBUteglTmvBGPEQjN1mor8_8Bm1Blk"
+      - OPENAI_API_KEY = "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"
