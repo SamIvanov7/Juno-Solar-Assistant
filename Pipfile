@@ -1,0 +1,13 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+steamship = "==2.13.16"
+termcolor = "*"
+
+[dev-packages]
+
+[requires]
+python_version = "3.10"

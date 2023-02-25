@@ -1,0 +1,12 @@
+version: '3'
+services:
+  juno_solar_bot:
+    build: .
+    restart: always
+    environment:
+      TELEGRAM_TOKEN: "6038351834:AAHrRDBUteglTmvBGPEQjN1mor8_8Bm1Blk"
+      OPENAI_API_KEY: "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"
+    ports:
+      - "9000:80"
+    volumes:
+      - ./logs:/app/logs
