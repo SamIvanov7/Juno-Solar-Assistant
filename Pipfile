@@ -6,6 +6,8 @@ name = "pypi"
 [packages]
 steamship = "==2.13.16"
 termcolor = "*"
+openai = "*"
+telebot = "*"
 
 [dev-packages]
 
