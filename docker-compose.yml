@@ -3,9 +3,10 @@ version: '3'
 services:
   bot:
     build: .
+    container_name: juno_solar_assistants
     restart: always
     environment:
-      TELEGRAM_TOKEN: "6170146129:AAFIzKz1RCiCM56zMbjUklnrLrWDzxsBvtk"
-      OPENAI_API_KEY: "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"
+      TELEGRAM_TOKEN: ""
+      OPENAI_API_KEY: ""
     volumes:
       - ./logs:/app/logs
