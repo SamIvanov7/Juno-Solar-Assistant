@@ -3,10 +3,10 @@ version: '3'
 services:
   bot:
     build: .
-    container_name: juno_solar_assistants
+    container_name: chat_bot
     restart: always
     environment:
       TELEGRAM_TOKEN: ""
       OPENAI_API_KEY: ""
     volumes:
-      - ./logs:/app/logs
+      - ./logs:/app/
