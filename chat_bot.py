@@ -1,26 +1,20 @@
 import openai
 import logging
 import os
-from dotenv import load_dotenv, find_dotenv
+
 import telebot
 
-ENV_FILE = find_dotenv()
-load_dotenv(ENV_FILE)
 
-openai.api_key = os.getenv("OPENAI_API_KEY")
-telegram_api_key = str(os.getenv("TELEGRAM_API_KEY"))
+OPENAI_API_KEY = ''
+openai.api_key = OPENAI_API_KEY
 
-bot = telebot.TeleBot(telegram_api_key)
+TELEGRAM_API_KEY = ''
+bot = telebot.TeleBot(TELEGRAM_API_KEY)
 
 start_chat_log = [
     {
         "role": "system",
-        "content": """
-
-          ### prompt message ###
-
-          
-                     """,
+        "content": " Hallo, MILF , do you want my d...k?"
     }
 ]
 

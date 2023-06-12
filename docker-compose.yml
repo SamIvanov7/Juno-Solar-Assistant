@@ -1,7 +1,7 @@
 version: '3'
 
 services:
-  bot:
+  chat_bot:
     build: .
     container_name: chat_bot
     restart: always
@@ -9,4 +9,4 @@ services:
       TELEGRAM_TOKEN: ""
       OPENAI_API_KEY: ""
     volumes:
-      - ./logs:/app/
+      - .:/app/
